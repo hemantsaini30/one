@@ -2,30 +2,32 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="w-64 h-full bg-gray-950 flex flex-col justify-between shadow-xl">
+    <div className="w-64 h-full bg-[#111315] flex flex-col justify-between border-r border-[#2A2F35]">
       
       {/* TOP */}
       <div>
         {/* LOGO */}
-        <div className="p-5 border-b border-gray-800">
-          <h1 className="text-2xl font-extrabold tracking-wide text-blue-400">
-            Ease<span className="text-white">Buddy</span>
+        <div className="p-5 border-b border-[#2A2F35]">
+          <h1 className="text-2xl font-bold tracking-wide text-gray-200">
+            Ease<span className="text-amber-500">Buddy</span>
           </h1>
-          <p className="text-xs text-gray-400 mt-1">Your Study Companion</p>
+          <p className="text-xs text-gray-400 mt-1">
+            Your Study Companion
+          </p>
         </div>
 
         {/* SUBJECTS */}
-        <div className="px-4 mt-4">
+        <div className="px-4 mt-5">
           <h2 className="text-xs uppercase text-gray-400 tracking-wider mb-3">
             Subjects
           </h2>
 
-          <nav className="flex flex-col gap-3">
+          <nav className="flex flex-col gap-2">
             
             {[
               { name: "English", path: "/english" },
               { name: "Hindi", path: "/hindi" },
-              { name: "Maths", path: "/maths" },
+              { name: "Mathematics", path: "/maths" },
               { name: "SST", path: "/sst" },
               { name: "Science", path: "/science" },
             ].map((item) => (
@@ -33,11 +35,11 @@ const Sidebar = () => {
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) =>
-                  `p-3 rounded-xl transition-all duration-200 
+                  `p-3 rounded-lg border text-sm transition-all duration-200
                   ${
                     isActive
-                      ? "bg-blue-500 text-white shadow-lg"
-                      : "bg-gray-900 text-gray-300 hover:bg-gray-800 hover:scale-105"
+                      ? "bg-amber-500/10 text-amber-400 border-amber-500"
+                      : "bg-[#1A1D21] text-gray-300 border-[#2A2F35] hover:bg-[#22262B]"
                   }`
                 }
               >
@@ -50,7 +52,7 @@ const Sidebar = () => {
       </div>
 
       {/* BOTTOM */}
-      <div className="p-4 border-t border-gray-800">
+      <div className="p-4 border-t border-[#2A2F35]">
         <div className="flex items-center gap-3 mb-3">
           <img
             src="https://via.placeholder.com/40"
@@ -58,12 +60,12 @@ const Sidebar = () => {
             alt="profile"
           />
           <div>
-            <p className="text-sm">Hemant</p>
+            <p className="text-sm text-gray-200">Hemant</p>
             <p className="text-xs text-gray-400">Student</p>
           </div>
         </div>
 
-        <button className="w-full bg-red-500 hover:bg-red-600 transition p-2 rounded-lg">
+        <button className="w-full bg-amber-500 hover:bg-amber-400 text-black transition p-2 rounded-lg font-medium">
           Sign Out
         </button>
       </div>
