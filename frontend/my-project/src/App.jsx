@@ -7,6 +7,7 @@ import Hindi from "./pages/Hindi";
 import Mathematics from "./pages/Mathematics";
 import SST from "./pages/SST";
 import Science from "./pages/Science";
+import ChapterDetails from "./pages/ChapterDetails";
 
 import FirstFlight from "./pages/FirstFlight";
 import Footprints from "./pages/FootPrints";
@@ -28,7 +29,6 @@ function App() {
         <Route path="english" element={<English />} />
         <Route path="hindi" element={<Hindi />} />
         <Route path="maths" element={<Mathematics />} />
-        <Route path="sst" element={<SST />} />
         <Route path="science" element={<Science />} />
 
         {/* English Subsections */}
@@ -45,6 +45,10 @@ function App() {
         <Route path="sst/civics" element={<Civics />} />
         <Route path="sst/economics" element={<Economics />} />
 
+        <Route path="sst" element={<SST />} />
+
+        {/* 🔥 Dynamic Route (BEST PRACTICE) */}
+        <Route path=":subject/chapter/:id" element={<ChapterDetails />} />
       </Route>
     </Routes>
   );
