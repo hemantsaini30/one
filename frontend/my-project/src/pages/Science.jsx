@@ -3,10 +3,11 @@ import scienceChapters from "../data/scienceChapters";
 
 const Science = () => {
   return (
-    <Chapters 
+    <Chapters
       title="Class 10 Science"
       chapters={scienceChapters}
       subject="science"
+      type="chapter"
     />
   );
 };

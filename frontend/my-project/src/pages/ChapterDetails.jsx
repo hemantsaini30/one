@@ -3,13 +3,13 @@ import Chapters from "../components/Chapters";
 import detailsPage from "../data/detailsPage";
 
 const ChapterDetails = () => {
-  const { id } = useParams();
+  const { id, subject } = useParams();
 
   return (
     <Chapters
       title={`Chapter ${id}`}
       chapters={detailsPage}
-      subject="maths"
+      subject={subject}
       type="feature"
       chapterId={id}
     />

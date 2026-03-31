@@ -3,10 +3,11 @@ import mathsChapters from "../data/mathsChapters";
 
 const Mathematics = () => {
   return (
-    <Chapters 
+    <Chapters
       title="Class 10 Mathematics"
       chapters={mathsChapters}
       subject="maths"
+      type="chapter"
     />
   );
 };

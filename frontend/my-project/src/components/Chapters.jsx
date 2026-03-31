@@ -1,11 +1,18 @@
+import { useNavigate } from "react-router-dom";
+
 const Chapters = ({ title, chapters, subject, type, chapterId }) => {
   const navigate = useNavigate();
 
   const handleClick = (item) => {
-    if (type === "chapter") {
+    if (type === "feature") {
+      navigate(
+        `/${subject}/chapter/${chapterId}/${item.name
+          .toLowerCase()
+          .replace(/\s/g, "")}`
+      );
+    } else {
+      // default = chapter
       navigate(`/${subject}/chapter/${item.id}`);
-    } else if (type === "feature") {
-      navigate(`/${subject}/chapter/${chapterId}/${item.name.toLowerCase().replace(/\s/g, "")}`);
     }
   };
 
@@ -31,3 +38,5 @@ const Chapters = ({ title, chapters, subject, type, chapterId }) => {
     </div>
   );
 };
+
+export default Chapters;
