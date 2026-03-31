@@ -2,7 +2,7 @@ import React from 'react'
 
 const Mathematics = () => {
   return (
-    <div>Mathematics Page</div>
+    <div>Mathematics Page Check</div>
   )
 }
 
