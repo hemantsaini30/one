@@ -1,9 +1,13 @@
-import React from 'react'
+import Chapters from "../components/Chapters";
+import mathsChapters from "../data/mathsChapters";
 
 const Mathematics = () => {
   return (
-    <div>Mathematics Page</div>
-  )
-}
+    <Chapters 
+      title="Class 10 Mathematics" 
+      chapters={mathsChapters} 
+    />
+  );
+};
 
-export default Mathematics
+export default Mathematics;

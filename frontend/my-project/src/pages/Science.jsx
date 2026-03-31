@@ -1,9 +1,13 @@
-import React from 'react'
+import Chapters from "../components/Chapters";
+import scienceChapters from "../data/scienceChapters";
 
 const Science = () => {
   return (
-    <div>Science Page</div>
-  )
-}
+    <Chapters 
+      title="Class 10 Science" 
+      chapters={scienceChapters} 
+    />
+  );
+};
 
-export default Science
+export default Science;
