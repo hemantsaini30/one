@@ -1,0 +1,76 @@
+===============================
+EaseBuddy UI Color Palette
+Theme: Soft Dark (Grey + Amber)
+===============================
+
+
+[ BACKGROUND COLORS ]
+bg-main        : #111315   // Main app background
+bg-surface     : #1A1D21   // Navbar, cards
+bg-hover       : #22262B   // Hover states
+
+
+[ ACCENT COLORS ]
+accent-main    : #F59E0B   // Primary accent (buttons, highlights)
+accent-soft    : #FCD34D   // Light accent (hover glow)
+accent-light   : rgba(245, 158, 11, 0.12)   // subtle background glow
+
+
+[ TEXT COLORS ]
+text-primary   : #E5E7EB   // Main text
+text-secondary : #9CA3AF   // Secondary text
+text-muted     : #6B7280   // Disabled / less important
+
+
+[ BORDER COLORS ]
+border-main    : #2A2F35   // Standard borders
+
+
+[ STATUS COLORS (optional future use) ]
+success        : #22C55E
+warning        : #F59E0B
+error          : #EF4444
+
+
+===============================
+Tailwind Usage Reference
+===============================
+
+Main Background:
+bg-[#111315]
+
+Surface (Navbar, Cards):
+bg-[#1A1D21]
+
+Hover:
+hover:bg-[#22262B]
+
+Borders:
+border-[#2A2F35]
+
+Primary Accent:
+bg-amber-500
+hover:bg-amber-400
+
+Text:
+text-gray-200
+text-gray-400
+
+
+===============================
+Design Rules (IMPORTANT)
+===============================
+
+1. Do NOT overuse accent color
+   → Only for buttons, active states, highlights
+
+2. Prefer grey surfaces over pure black
+   → Easier on eyes
+
+3. Use borders instead of heavy shadows
+
+4. Keep contrast subtle, not harsh
+
+5. Maintain consistency across all components
+
+===============================
