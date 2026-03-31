@@ -4,8 +4,9 @@ import scienceChapters from "../data/scienceChapters";
 const Science = () => {
   return (
     <Chapters 
-      title="Class 10 Science" 
-      chapters={scienceChapters} 
+      title="Class 10 Science"
+      chapters={scienceChapters}
+      subject="science"
     />
   );
 };
